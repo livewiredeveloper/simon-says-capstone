@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles.css" />
+    <title>Simon Says</title>
+  </head>
+  <body>
+    <main>
+      <!--TODO: Add the missing information in the h1 heading -->
+      <h1 class="js-heading"> My game!!</h1>
+
+      <section class="game-controls">
+      <!-- levels  -->
+      <section>
+        <select class="select-level" name="level" id="level-js">
+          <option value="1" selected="selected">Level 1</option>
+          <option value="2">Level 2</option>
+          <option value="3">Level 3</option>
+          <option value="4">Level 4</option>
+        </select>
+      </section>
+      
+        <button class="start-button js-start-button">start</button>
+        <button class="reset-button" id="resetBtn-js">Reset</button>
+      </section>
+      <span class="status hidden js-status"></span>
+
+
+
+      <section class="pad-container unclickable js-pad-container">
+        <div class="pad pad-red js-pad-red" data-color="red"></div>
+        <div class="pad pad-green js-pad-green" data-color="green"></div>
+        <div class="pad pad-blue js-pad-blue" data-color="blue"></div>
+        <div class="pad pad-yellow js-pad-yellow" data-color="yellow"></div>
+      </section>
+
+
+    </main>
+    <script src="./src/index.js"></script>
+  </body>
+</html>
